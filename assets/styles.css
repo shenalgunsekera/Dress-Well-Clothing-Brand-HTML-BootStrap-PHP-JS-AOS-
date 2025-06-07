@@ -60,3 +60,25 @@ body, html {
   width: 100%;
   overflow-x: hidden;
 }
+
+.navbar-collapse {
+  z-index: 1050 !important;
+  background-color: white; /* Matches your navbar */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white !important;
+  position: absolute;
+}
+
+.navbar-collapse.collapsing {
+  transition: height 0.3s ease;
+}
+.navbar {
+  overflow: visible !important;
+  position: absolute;
+}
+
