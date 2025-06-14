@@ -6,6 +6,7 @@
   <title>Clothing Brand</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -14,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative" style="box-shadow: 0 2px 4px rgba(0,0,0,0.1); height: 80px; z-index: 1050;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">
-      <img src="images/logo.png" alt="Dress Well Logo" style="height: 80px;">
+      <img src="images/12.png" alt="Dress Well Logo" style="height: 40px;">
     </a>
    <button class="navbar-toggler bg-white border-0 shadow-sm" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav"
@@ -42,7 +43,7 @@
     <?php endif; ?>
     <li class="w-100 d-lg-none"><hr class="m-0 border-top border-dark opacity-100"></li>
     <?php if (isset($_SESSION['user_id'])): ?>
-    <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
+    <li class="nav-item"><a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
     <?php endif; ?>
     <li class="w-100 d-lg-none"><hr class="m-0 border-top border-dark opacity-100"></li>
     <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>

@@ -15,17 +15,24 @@ $products = $stmt->fetchAll();
   <main class="flex-grow-1">
 
       <!-- Banner -->
-      <div class="w-100">
-        <img 
-          src="images/banner.png" 
-          class="img-fluid w-100" 
-          alt="Banner Image"
-          style="height: 400px; object-fit: cover; display: block;"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+      <div class="buttons-container position-relative" style="height: 300px;">
+        <!-- Video fills the container -->
+        <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" autoplay loop muted playsinline>
+          <source src="images/1.mp4" type="video/mp4" />
+        </video>
+
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <img src="images/logo.png" alt="Dress Well Logo" style="height: 250px;">
+        </div>
+
+        <!-- Button appears over the video -->
+        <div class="position-absolute bottom-0 start-0 p-3">
+          <a href="products.php" class="btn btn-dark radius-30 shadow-lg" style="font-size: 1.0rem; padding: 5px 15px; text-decoration: none;">
+            SHOP NOW
+          </a>
+        </div>
       </div>
+
       <br>
       <hr class="w-1 bg-dark thick">
       <!-- Latest Items Section -->
